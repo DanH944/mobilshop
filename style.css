@@ -2,13 +2,8 @@ body {
  background-image: url("image1.jpg");
  background-size: cover;
  background-attachment: fixed;
+ 
 }
-
-
-h1 {
- text-align: center;
-}
-
 
 #container {
  height: auto;
@@ -23,37 +18,41 @@ h1 {
 }
 
 #head {
-height: 150px;
+ height: 150px;
  width: 100%;
  background-color: #FFF;
  background-image: url("banner.jpg");
  background-position: center;
- background-size: cover;
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-color: #003;
+ border: 1px solid #000;
+ border-radius: 10px;
 
 }
 
 #nav {
- height: 55px;
- width: 100%;
- margin: 0 auto;
- margin-top: 10px;
- text-align: center;
- background-color: #FF9;
- padding-top: 0px;
- border-top:2px solid #000;
- border-bottom:2px solid #000;
- border-radius: 10px;
- 
+    width: 98%;
+    margin-top: 10px;
+    background-color: #FF9;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
 }
 
 #nav a {
- display: inline-block;
- padding: 10px 20px;
- margin: 5px;
- background-color: #0066cc;
- color: white;
- text-decoration: none;
- border-radius: 10px;
+    display: block;
+    padding: 10px 30px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
 }
 
 #nav a:hover {
@@ -75,6 +74,4 @@ height: 150px;
  text-align: center;
  clear: both;
 }
-
-
 
